@@ -29,7 +29,6 @@ NodeJS, Angluar, Express, MongoDB, Mongoose, BCrypt, CORS, Passport, JSWebToken,
 
 > "There is no wealth like knowledge,  and no poverty like ignorance." -  **Buddah**
 
-***
 My passion for problem-solving and complex architectures is what led me to my studies in computing. I have a strong presence around public speaking and leadership and have demonstrated them throughout my college studies, industry placement and personal experience. I am very open to feedback and adapting my own interpersonal skills, development skills, knowledge of the area, collaboration skills, working as a team or individually on projects.
 
 ## Development
