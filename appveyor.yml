@@ -18,6 +18,11 @@ image: Visual Studio 2015
 # Worker Platform
 platform: x64
 
+# Skip build if current files were modified.
+skip_commits:
+  files:
+    - dir/*.md
+
 # Install scripts. (runs after repo cloning)
 install:
   # Get the latest stable version of Node.js or io.js
