@@ -1,13 +1,10 @@
 # Future Tech Frontier
 
+[![Build status](https://ci.appveyor.com/api/projects/status/datsvhxq96r4x8ra?svg=true)](https://ci.appveyor.com/project/Alex-Jay/meanauthapp)
+
 Future Tech Frontier is an web portfolio made using the MEAN Stack and authenticaiton - navigate through a custom REST API with encluded token-based authentication.
 
 This is considered a temporary side-project yet has the potential to become my next portfolio.
-
-## Project
-
-### Build Status
-[![Build status](https://ci.appveyor.com/api/projects/status/datsvhxq96r4x8ra?svg=true)](https://ci.appveyor.com/project/Alex-Jay/meanauthapp)
 
 ### Modules Used
 NodeJS, Angluar, Express, MongoDB, Mongoose, BCrypt, CORS, Passport, JSWebToken, Passport-JWT, Body-Parser, AppVeyor
