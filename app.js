@@ -29,7 +29,7 @@ app.use(cors());
 const users = require('./routes/users');
 
 /* Port */
-const port = process.env.port || 8080;
+var port = process.env.PORT || 4000;
 
 /* Set Static Folder */
 app.use(express.static(path.join(__dirname, 'public')));
