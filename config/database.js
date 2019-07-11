@@ -1,5 +1,5 @@
 module.exports =
 {
-    database: 'mongodb+srv://admin_:Alexcom199%26%26@cluster0-xs87a.mongodb.net/meanauthapp',
+    database: 'mongodb://admin:Alexcom199%26%26@ds243607.mlab.com:43607/heroku_msb8s9c0',
     secret: 'yoursecret'
 }
