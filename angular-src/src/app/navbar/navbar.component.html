@@ -1,10 +1,32 @@
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <h5 class="my-0 mr-md-auto font-weight-normal"><a [routerLink]="['/']">Future Tech Frontier</a></h5>
+  <h5 class="my-0 mr-md-auto font-weight-normal"><a [routerLink]="['/']" href="#">Future Tech Frontier</a></h5>
   <nav class="my-2 my-md-0 mr-md-3">
-    <a class="p-2 text-dark" href="#"><span [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">Projects</span></a>
-    <a class="p-2 text-dark" href="#"><span [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">Notes</span></a>
-    <a class="p-2 text-dark" [routerLink]="['/register']"><span [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">Register</span></a>
+    <span [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+           <a *ngIf="authService.loggedIn()" class="p-2 text-dark" [routerLink]="['/profile']" href="#">Profile</a>
+    </span>
+
+    <span [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+      <a *ngIf="authService.loggedIn()" class="p-2 text-dark" [routerLink]="['/dashboard']" href="#">Dashboard</a>
+    </span>
+
+    <span [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+      <a class="p-2 text-dark" href="#">Projects</a>
+    </span>
+
+    <span [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+      <a class="p-2 text-dark" href="#">Notes</a>
+    </span>
+
+    <span [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+      <a *ngIf="!authService.loggedIn()" class="p-2 text-dark" [routerLink]="['/register']" href="#">Register</a>
+    </span>
+
   </nav>
-  <a class="btn btn-outline-primary" [routerLink]="['/login']">Log In</a>
-  <a class="btn btn-outline-danger" (click)="onLogoutClick()" href="#">Log Out</a>
+    <span>
+      <a *ngIf="!authService.loggedIn()" [routerLink]="['/login']" class="btn btn-outline-primary" href="#">Log In</a>
+    </span>
+
+    <span>
+        <a *ngIf="authService.loggedIn()" (click)="onLogoutClick()" class="btn btn-outline-danger" href="#">Log Out</a>
+    </span>
 </div>

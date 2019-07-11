@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
+import { JwtHelperService } from '@auth0/angular-jwt/src/jwthelper.service';
 
 @Injectable({
   providedIn: 'root'
@@ -9,14 +10,14 @@ export class AuthService {
   authToken: any;
   user: any;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   registerUser(user) {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json'
     });
-    
-    return this.http.post('http://localhost:3000/users/register', user, {headers: headers})
+
+    return this.http.post('http://localhost:3000/users/register', user, { headers: headers })
       .pipe(map(res => res));
   }
 
@@ -25,7 +26,7 @@ export class AuthService {
       'Content-Type': 'application/json'
     });
 
-    return this.http.post('http://localhost:3000/users/authenticate', user, {headers: headers})
+    return this.http.post('http://localhost:3000/users/authenticate', user, { headers: headers })
       .pipe(map(res => res));
   }
 
@@ -37,7 +38,7 @@ export class AuthService {
       'Authorization': this.authToken
     });
 
-    return this.http.get('http://localhost:3000/users/profile', {headers: headers})
+    return this.http.get('http://localhost:3000/users/profile', { headers: headers })
       .pipe(map(res => res));
   }
 
@@ -51,6 +52,16 @@ export class AuthService {
   loadToken() {
     const token = localStorage.getItem('id_token');
     this.authToken = token;
+  }
+
+  loggedIn(): boolean {
+    const helper = new JwtHelperService();
+    if(helper.decodeToken(localStorage.getItem('id_token')) !== null) {
+      //const data = helper.decodeToken(localStorage.getItem('id_token'));
+      return true;
+    } else {
+      return false;
+    }
   }
 
   logout() {
