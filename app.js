@@ -29,7 +29,7 @@ app.use(cors());
 const users = require('./routes/users');
 
 /* Port */
-const port = 3000;
+const port = process.env.port || 8080;
 
 /* Set Static Folder */
 app.use(express.static(path.join(__dirname, 'public')));
@@ -49,6 +49,10 @@ app.use('/users', users);
 /* Index Route */
 app.get('/', (req, res) => {
     res.send('Invalid Endpoint');
+});
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
 /* Start Server */

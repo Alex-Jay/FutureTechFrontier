@@ -17,7 +17,7 @@ export class AuthService {
       'Content-Type': 'application/json'
     });
 
-    return this.http.post('http://localhost:3000/users/register', user, { headers: headers })
+    return this.http.post('users/register', user, { headers: headers })
       .pipe(map(res => res));
   }
 
@@ -26,7 +26,7 @@ export class AuthService {
       'Content-Type': 'application/json'
     });
 
-    return this.http.post('http://localhost:3000/users/authenticate', user, { headers: headers })
+    return this.http.post('users/authenticate', user, { headers: headers })
       .pipe(map(res => res));
   }
 
@@ -38,7 +38,7 @@ export class AuthService {
       'Authorization': this.authToken
     });
 
-    return this.http.get('http://localhost:3000/users/profile', { headers: headers })
+    return this.http.get('users/profile', { headers: headers })
       .pipe(map(res => res));
   }
 
@@ -57,7 +57,6 @@ export class AuthService {
   loggedIn(): boolean {
     const helper = new JwtHelperService();
     if(helper.decodeToken(localStorage.getItem('id_token')) !== null) {
-      //const data = helper.decodeToken(localStorage.getItem('id_token'));
       return true;
     } else {
       return false;
