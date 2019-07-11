@@ -22,14 +22,14 @@ mongoose.connection.on('error', (err) => {
 /* Express Application */
 const app = express();
 
+/* CORS Middleware */
+app.use(cors());
+
 /* Require Users Endpoint */
 const users = require('./routes/users');
 
 /* Port */
 const port = 3000;
-
-/* CORS Middleware */
-app.use(cors());
 
 /* Set Static Folder */
 app.use(express.static(path.join(__dirname, 'public')));

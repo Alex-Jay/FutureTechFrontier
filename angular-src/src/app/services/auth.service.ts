@@ -12,16 +12,32 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   registerUser(user) {
-    let headers = new HttpHeaders();
-    headers.append('Content-Type', 'application/json');
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+    
     return this.http.post('http://localhost:3000/users/register', user, {headers: headers})
       .pipe(map(res => res));
   }
 
   authenticateUser(user) {
-    let headers = new HttpHeaders();
-    headers.append('Content-Type', 'application/json');
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+
     return this.http.post('http://localhost:3000/users/authenticate', user, {headers: headers})
+      .pipe(map(res => res));
+  }
+
+  getProfile() {
+    this.loadToken();
+
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': this.authToken
+    });
+
+    return this.http.get('http://localhost:3000/users/profile', {headers: headers})
       .pipe(map(res => res));
   }
 
@@ -30,6 +46,11 @@ export class AuthService {
     localStorage.setItem('user', JSON.stringify(user));
     this.authToken = token;
     this.user = user;
+  }
+
+  loadToken() {
+    const token = localStorage.getItem('id_token');
+    this.authToken = token;
   }
 
   logout() {
