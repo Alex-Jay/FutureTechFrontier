@@ -37,7 +37,7 @@ Email alexjaycontact@gmail.com if you would like to be added as a contributor.
 
 ## Social Links
 - [**LinkedIn**](https://www.linkedin.com/in/alex-jevdokimov/)
-- [**I.T Doctor, Dundalk**](https://soundcloud.com/whipnode)
+- [**I.T Doctor, Dundalk**](https://www.facebook.com/itdoctordundalk)
 - [**Soundcloud**](https://soundcloud.com/whipnode)
 
 *If you have any further requests or proposals, don't be stumbled to contact me, I love socialising <3.*
