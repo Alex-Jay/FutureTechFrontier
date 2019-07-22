@@ -2,7 +2,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/datsvhxq96r4x8ra?svg=true)](https://ci.appveyor.com/project/Alex-Jay/meanauthapp)
 
-Future Tech Frontier is an web portfolio made using the MEAN Stack and authentication - navigate through a custom REST API with included token-based authentication. 
+Future Tech Frontier is a web portfolio made using the MEAN Stack and authentication - navigate through a custom REST API with included token-based authentication. 
 
 This is considered a temporary side-project yet has the potential to become my next portfolio.
 
