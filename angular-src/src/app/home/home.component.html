@@ -1,37 +1,58 @@
-<div class="jumbotron text-center">
-    <h1>Future Tech Frontier</h1>
-    <p class="lead">Future Tech Frontier is a web portfolio made using the MEAN Stack and authentication - navigate through a custom REST API with included token-based authentication.</p>
-    <div>
-        <a class="btn btn-primary" [routerLink]="['/register']">Register</a> <a class="btn btn-default" [routerLink]="['/login']">Log In</a>
-    </div>
-</div>
+<main role="main">
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Future Tech Frontier</h1>
+            <p class="lead text-muted">Future Tech Frontier is a web portfolio
+                made using the
+                MEAN Stack and authentication - navigate through a custom REST
+                API
+                with included token-based authentication.
+            </p>
+            <p>
+                <a class="btn btn-primary" [routerLink]="['/register']">Register</a>
+                <a class="btn btn-default" [routerLink]="['/login']">Log In</a>
+            </p>
+        </div>
+    </section>
 
-<div class="row">
-    <div class="col-md-4">
-        <h3>Express Backend</h3>
-        <p>A rock solid NodeJS/Express server using Mongoose to organize models and query the database</p>
-    </div>
-    <div class="col-md-4">
-        <h3>Angular Frontend</h3>
-        <p>Angular CLI to generate components, services and more. Local dev server and easy compilation</p>
-    </div>
-    <div class="col-md-4">
-        <h3>JWT Tokens</h3>
-        <p>Full featured authentications using JSON web tokens. Login and store user data securely</p>
-    </div>
-</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Express Backend</h3>
+                <p>A rock solid NodeJS/Express server using Mongoose to organize
+                    models and query the database</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Angular Frontend</h3>
+                <p>Angular CLI to generate components, services and more. Local
+                    dev
+                    server and easy compilation</p>
+            </div>
+            <div class="col-md-4">
+                <h3>JWT Tokens</h3>
+                <p>Full featured authentications using JSON web tokens. Login
+                    and
+                    store user data securely</p>
+            </div>
+        </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h3>Azure Hosting</h3>
-        <p>Hosted using Azure App Services. Fast, scalable and extensible cloud-based hosting service</p>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Azure Hosting</h3>
+                <p>Hosted using Azure App Services. Fast, scalable and
+                    extensible
+                    cloud-based hosting service</p>
+            </div>
+            <div class="col-md-4">
+                <h3>PositiveSSL Certificate</h3>
+                <p>PositiveSSL certificates from Sectigo feature high strength
+                    2048-bit digital signatures</p>
+            </div>
+            <div class="col-md-4">
+                <h3>AppVeyor CI/CD</h3>
+                <p>Continuous Integration solution for Windows and Linux. Build,
+                    test, deploy your apps faster, on any platform</p>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h3>PositiveSSL Certificate</h3>
-        <p>PositiveSSL certificates from Sectigo feature high strength 2048-bit digital signatures</p>
-    </div>
-    <div class="col-md-4">
-        <h3>AppVeyor CI/CD</h3>
-        <p>Continuous Integration solution for Windows and Linux. Build, test, deploy your apps faster, on any platform</p>
-    </div>
-</div>
+</main>

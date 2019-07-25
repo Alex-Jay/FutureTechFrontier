@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\r\n<div class=\"container\">\r\n    <flash-messages></flash-messages>\r\n    <router-outlet></router-outlet>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <div class=\"header\">\r\n        <app-navbar></app-navbar>\r\n    </div>\r\n    <div class=\"content\">\r\n        <flash-messages></flash-messages>\r\n        <router-outlet></router-outlet>\r\n    </div>\r\n    <div class=\"footer\">\r\n        <app-footer></app-footer>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -41,7 +41,18 @@ module.exports = "<app-navbar></app-navbar>\r\n<div class=\"container\">\r\n    
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">Dashboard</h2>\n<p>Welcome to your dashboard</p>"
+module.exports = "<h2 class=\"page-header\">Dashboard</h2>\r\n<p>Welcome to your dashboard</p>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/footer/footer.component.html":
+/*!************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/footer/footer.component.html ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"py-3\">\n    <p class=\"m-0 text-center text-white\">Copyright &copy; Future Tech Frontier 2019</p>\n</div>"
 
 /***/ }),
 
@@ -52,7 +63,7 @@ module.exports = "<h2 class=\"page-header\">Dashboard</h2>\n<p>Welcome to your d
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron text-center\">\n    <h1>Future Tech Frontier</h1>\n    <p class=\"lead\">Future Tech Frontier is an web portfolio made using the MEAN Stack and authentication - navigate through a custom REST API with included token-based authentication.</p>\n    <div>\n        <a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a> <a class=\"btn btn-default\" [routerLink]=\"['/login']\">Log In</a>\n    </div>\n</div>\n\n<div class=\"row\">\n    <div class=\"col-md-4\">\n        <h3>Express Backend</h3>\n        <p>A rock solid NodeJS/Express server using Mongoose to organize models and query the database</p>\n    </div>\n    <div class=\"col-md-4\">\n        <h3>Angular Frontend</h3>\n        <p>Angular CLI to generate components, services and more. Local dev server and easy compilation</p>\n    </div>\n    <div class=\"col-md-4\">\n        <h3>JWT Tokens</h3>\n        <p>Full featured authentications using JSON web tokens. Login and store user data securely</p>\n    </div>\n</div>\n\n<div class=\"row\">\n    <div class=\"col-md-4\">\n        <h3>Azure Hosting</h3>\n        <p>Hosted using Azure App Services. Fast, scalable and extensible cloud-based hosting service</p>\n    </div>\n    <div class=\"col-md-4\">\n        <h3>PositiveSSL Certificate</h3>\n        <p>PositiveSSL certificates from Sectigo feature high strength 2048-bit digital signatures</p>\n    </div>\n    <div class=\"col-md-4\">\n        <h3>AppVeyor CI/CD</h3>\n        <p>Continuous Integration solution for Windows and Linux. Build, test, deploy your apps faster, on any platform</p>\n    </div>\n</div>"
+module.exports = "<main role=\"main\">\r\n    <section class=\"jumbotron text-center\">\r\n        <div class=\"container\">\r\n            <h1 class=\"jumbotron-heading\">Future Tech Frontier</h1>\r\n            <p class=\"lead text-muted\">Future Tech Frontier is a web portfolio\r\n                made using the\r\n                MEAN Stack and authentication - navigate through a custom REST\r\n                API\r\n                with included token-based authentication.\r\n            </p>\r\n            <p>\r\n                <a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a>\r\n                <a class=\"btn btn-default\" [routerLink]=\"['/login']\">Log In</a>\r\n            </p>\r\n        </div>\r\n    </section>\r\n\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-4\">\r\n                <h3>Express Backend</h3>\r\n                <p>A rock solid NodeJS/Express server using Mongoose to organize\r\n                    models and query the database</p>\r\n            </div>\r\n            <div class=\"col-md-4\">\r\n                <h3>Angular Frontend</h3>\r\n                <p>Angular CLI to generate components, services and more. Local\r\n                    dev\r\n                    server and easy compilation</p>\r\n            </div>\r\n            <div class=\"col-md-4\">\r\n                <h3>JWT Tokens</h3>\r\n                <p>Full featured authentications using JSON web tokens. Login\r\n                    and\r\n                    store user data securely</p>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"col-md-4\">\r\n                <h3>Azure Hosting</h3>\r\n                <p>Hosted using Azure App Services. Fast, scalable and\r\n                    extensible\r\n                    cloud-based hosting service</p>\r\n            </div>\r\n            <div class=\"col-md-4\">\r\n                <h3>PositiveSSL Certificate</h3>\r\n                <p>PositiveSSL certificates from Sectigo feature high strength\r\n                    2048-bit digital signatures</p>\r\n            </div>\r\n            <div class=\"col-md-4\">\r\n                <h3>AppVeyor CI/CD</h3>\r\n                <p>Continuous Integration solution for Windows and Linux. Build,\r\n                    test, deploy your apps faster, on any platform</p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</main>"
 
 /***/ }),
 
@@ -63,7 +74,7 @@ module.exports = "<div class=\"jumbotron text-center\">\n    <h1>Future Tech Fro
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">Log In</h2>\n<form (submit)=\"onLoginSubmit()\">\n    <div class=\"form-group\">\n        <label for=\"username\">Username</label>\n        <input [(ngModel)]=\"username\" id=\"username\" class=\"form-control\" type=\"text\" name=\"username\">\n    </div>\n    <div class=\"form-group\">\n        <label for=\"password\">Password</label>\n        <input [(ngModel)]=\"password\" id=\"password\" class=\"form-control\" type=\"password\" name=\"password\">\n    </div>\n    <input type=\"submit\" class=\"btn btn-primary\" value=\"Log In\">\n</form>"
+module.exports = "<h2 class=\"page-header\">Log In</h2>\r\n<form (submit)=\"onLoginSubmit()\">\r\n    <div class=\"form-group\">\r\n        <label for=\"username\">Username</label>\r\n        <input [(ngModel)]=\"username\" id=\"username\" class=\"form-control\" type=\"text\" name=\"username\">\r\n    </div>\r\n    <div class=\"form-group\">\r\n        <label for=\"password\">Password</label>\r\n        <input [(ngModel)]=\"password\" id=\"password\" class=\"form-control\" type=\"password\" name=\"password\">\r\n    </div>\r\n    <input type=\"submit\" class=\"btn btn-primary\" value=\"Log In\">\r\n</form>"
 
 /***/ }),
 
@@ -74,7 +85,18 @@ module.exports = "<h2 class=\"page-header\">Log In</h2>\n<form (submit)=\"onLogi
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm\">\r\n  <h5 class=\"my-0 mr-md-auto font-weight-normal\"><a [routerLink]=\"['/']\" href=\"#\">Future Tech Frontier</a></h5>\r\n  <nav class=\"my-2 my-md-0 mr-md-3\">\r\n    <span [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\r\n           <a *ngIf=\"authService.loggedIn()\" class=\"p-2 text-dark\" [routerLink]=\"['/profile']\" href=\"#\">Profile</a>\r\n    </span>\r\n\r\n    <span [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\r\n      <a *ngIf=\"authService.loggedIn()\" class=\"p-2 text-dark\" [routerLink]=\"['/dashboard']\" href=\"#\">Dashboard</a>\r\n    </span>\r\n\r\n    <span [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\r\n      <a class=\"p-2 text-dark\" href=\"#\">Projects</a>\r\n    </span>\r\n\r\n    <span [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\r\n      <a class=\"p-2 text-dark\" href=\"#\">Notes</a>\r\n    </span>\r\n\r\n    <span [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\r\n      <a *ngIf=\"!authService.loggedIn()\" class=\"p-2 text-dark\" [routerLink]=\"['/register']\" href=\"#\">Register</a>\r\n    </span>\r\n\r\n  </nav>\r\n    <span>\r\n      <a *ngIf=\"!authService.loggedIn()\" [routerLink]=\"['/login']\" class=\"btn btn-outline-primary\" href=\"#\">Log In</a>\r\n    </span>\r\n\r\n    <span>\r\n        <a *ngIf=\"authService.loggedIn()\" (click)=\"onLogoutClick()\" class=\"btn btn-outline-danger\" href=\"#\">Log Out</a>\r\n    </span>\r\n</div>"
+module.exports = "<div class=\"d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm\">\r\n  <h5 class=\"my-0 mr-md-auto font-weight-normal\"><a [routerLink]=\"['/']\" href=\"#\">Future Tech Frontier</a></h5>\r\n  <nav class=\"my-2 my-md-0 mr-md-3\">\r\n    <span [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\r\n           <a *ngIf=\"authService.loggedIn()\" class=\"p-2 text-dark\" [routerLink]=\"['/profile']\" href=\"#\">Profile</a>\r\n    </span>\r\n\r\n    <span [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\r\n      <a *ngIf=\"authService.loggedIn()\" class=\"p-2 text-dark\" [routerLink]=\"['/dashboard']\" href=\"#\">Dashboard</a>\r\n    </span>\r\n\r\n    <span [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\r\n      <a class=\"p-2 text-dark\" [routerLink]=\"['/projects']\" href=\"#\">Projects</a>\r\n    </span>\r\n\r\n    <span [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\r\n      <a class=\"p-2 text-dark\" [routerLink]=\"['/notes']\" href=\"#\">Notes</a>\r\n    </span>\r\n\r\n    <span [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\r\n      <a *ngIf=\"!authService.loggedIn()\" class=\"p-2 text-dark\" [routerLink]=\"['/register']\" href=\"#\">Register</a>\r\n    </span>\r\n\r\n  </nav>\r\n    <span>\r\n      <a *ngIf=\"!authService.loggedIn()\" [routerLink]=\"['/login']\" class=\"btn btn-outline-primary\" href=\"#\">Log In</a>\r\n    </span>\r\n\r\n    <span>\r\n        <a *ngIf=\"authService.loggedIn()\" (click)=\"onLogoutClick()\" class=\"btn btn-outline-danger\" href=\"#\">Log Out</a>\r\n    </span>\r\n</div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/notes/notes.component.html":
+/*!**********************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/notes/notes.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<main role=\"main\">\n    <section class=\"jumbotron text-center\">\n        <div class=\"container\">\n            <h1 class=\"jumbotron-heading\">Future Tech Notes</h1>\n            <p class=\"lead text-muted\">A collection of ideas, thoughts and nuggets of knowledge which was gathered over the years.</p>\n        </div>\n    </section>\n\n    <div class=\"containter\">\n        <div class=\"row\">\n            <div class=\"col-sm-6\">\n                <div class=\"card\">\n                    <h3>Note Example</h3>\n                    <hr>\n                    <p>These cards will hold notes and blog entries. Users will\n                        be able to: post, update, like, share, comment, and much\n                        more.</p>\n                </div>\n            </div>\n            <div class=\"col-sm-6\">\n                <div class=\"card\">\n                    <h3>Note Example</h3>\n                    <hr>\n                    <p>These cards will hold notes and blog entries. Users will\n                        be able to: post, update, like, share, comment, and much\n                        more.</p>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"row\">\n            <div class=\"col-md-6\">\n                <div class=\"card\">\n                    <h3>Note Example</h3>\n                    <hr>\n                    <p>These cards will hold notes and blog entries. Users will\n                        be able to: post, update, like, share, comment, and much\n                        more.</p>\n                </div>\n            </div>\n            <div class=\"col-md-6\">\n                <div class=\"card\">\n                    <h3>Note Example</h3>\n                    <hr>\n                    <p>These cards will hold notes and blog entries. Users will\n                        be able to: post, update, like, share, comment, and much\n                        more.</p>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"row\">\n            <div class=\"col-md-6\">\n                <div class=\"card\">\n                    <h3>Note Example</h3>\n                    <hr>\n                    <p>These cards will hold notes and blog entries. Users will\n                        be able to: post, update, like, share, comment, and much\n                        more.</p>\n                </div>\n            </div>\n            <div class=\"col-md-6\">\n                <div class=\"card\">\n                    <h3>Note Example</h3>\n                    <hr>\n                    <p>These cards will hold notes and blog entries. Users will\n                        be able to: post, update, like, share, comment, and much\n                        more.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</main>"
 
 /***/ }),
 
@@ -85,7 +107,18 @@ module.exports = "<div class=\"d-flex flex-column flex-md-row align-items-center
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"user\">\n    <h2 class=\"page-header\">{{user.name}}</h2>\n    <ul class=\"list-group\">\n        <li class=\"list-group-item\">Username: {{user.username}}</li>\n        <li class=\"list-group-item\">Email: {{user.email}}</li>\n    </ul>\n</div>"
+module.exports = "<div *ngIf=\"user\">\r\n    <h2 class=\"page-header\">{{user.name}}</h2>\r\n    <ul class=\"list-group\">\r\n        <li class=\"list-group-item\">Username: {{user.username}}</li>\r\n        <li class=\"list-group-item\">Email: {{user.email}}</li>\r\n    </ul>\r\n</div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/projects/projects.component.html":
+/*!****************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/projects/projects.component.html ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<main role=\"main\">\n  <section class=\"jumbotron text-center\">\n    <div class=\"container\">\n      <h1 class=\"jumbotron-heading\">Project Portfolio</h1>\n      <p class=\"lead text-muted\">Here is a collection of interesting projects I\n        had the opportunity to work on. These projects where keystones of my\n        development as a game developer and a software engineer.</p>\n      <p>\n        <a href=\"#\" class=\"btn btn-primary my-2\">Notify Project Updates</a>\n      </p>\n    </div>\n  </section>\n\n  <div class=\"album py-5 bg-light\">\n    <div class=\"container\">\n\n      <div class=\"row\">\n        <div class=\"col-md-4\">\n          <div class=\"card mb-4 box-shadow\">\n            <img class=\"card-img-top\" src=\"../../assets/images/placeholder.png\"\n              alt=\"Card image cap\">\n            <div class=\"card-body\">\n              <p class=\"card-text\">This is a wider card with supporting text\n                below as a natural lead-in to additional content. This content\n                is a little bit longer.</p>\n              <hr>\n              <div class=\"d-flex justify-content-between align-items-center\">\n                <div class=\"btn-group\">\n                  <button type=\"button\" class=\"btn btn-md\n                    btn-outline-secondary\">View</button>\n                </div>\n                <small class=\"text-muted\">9 mins</small>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-md-4\">\n          <div class=\"card mb-4 box-shadow\">\n            <img class=\"card-img-top\" src=\"../../assets/images/placeholder.png\"\n              alt=\"Card image cap\">\n            <div class=\"card-body\">\n              <p class=\"card-text\">This is a wider card with supporting text\n                below as a natural lead-in to additional content. This content\n                is a little bit longer.</p>\n              <hr>\n              <div class=\"d-flex justify-content-between align-items-center\">\n                <div class=\"btn-group\">\n                  <button type=\"button\" class=\"btn btn-md\n                    btn-outline-secondary\">View</button>\n                </div>\n                <small class=\"text-muted\">9 mins</small>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-md-4\">\n          <div class=\"card mb-4 box-shadow\">\n            <img class=\"card-img-top\" src=\"../../assets/images/placeholder.png\"\n              alt=\"Card image cap\">\n            <div class=\"card-body\">\n              <hr>\n              <p class=\"card-text\">This is a wider card with supporting text\n                below as a natural lead-in to additional content. This content\n                is a little bit longer.</p>\n              <div class=\"d-flex justify-content-between align-items-center\">\n                <div class=\"btn-group\">\n                  <button type=\"button\" class=\"btn btn-md\n                    btn-outline-secondary\">View</button>\n                </div>\n                <small class=\"text-muted\">9 mins</small>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-md-4\">\n          <div class=\"card mb-4 box-shadow\">\n            <img class=\"card-img-top\" src=\"../../assets/images/placeholder.png\"\n              alt=\"Card image cap\">\n            <div class=\"card-body\">\n              <p class=\"card-text\">This is a wider card with supporting text\n                below as a natural lead-in to additional content. This content\n                is a little bit longer.</p>\n              <hr>\n              <div class=\"d-flex justify-content-between align-items-center\">\n                <div class=\"btn-group\">\n                  <button type=\"button\" class=\"btn btn-md\n                    btn-outline-secondary\">View</button>\n                </div>\n                <small class=\"text-muted\">9 mins</small>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-md-4\">\n          <div class=\"card mb-4 box-shadow\">\n            <img class=\"card-img-top\" src=\"../../assets/images/placeholder.png\"\n              alt=\"Card image cap\">\n            <div class=\"card-body\">\n              <p class=\"card-text\">This is a wider card with supporting text\n                below as a natural lead-in to additional content. This content\n                is a little bit longer.</p>\n              <hr>\n              <div class=\"d-flex justify-content-between align-items-center\">\n                <div class=\"btn-group\">\n                  <button type=\"button\" class=\"btn btn-md\n                    btn-outline-secondary\">View</button>\n                </div>\n                <small class=\"text-muted\">9 mins</small>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-md-4\">\n          <div class=\"card mb-4 box-shadow\">\n            <img class=\"card-img-top\" src=\"../../assets/images/placeholder.png\"\n              alt=\"Card image cap\">\n            <div class=\"card-body\">\n              <p class=\"card-text\">This is a wider card with supporting text\n                below as a natural lead-in to additional content. This content\n                is a little bit longer.</p>\n              <hr>\n              <div class=\"d-flex justify-content-between align-items-center\">\n                <div class=\"btn-group\">\n                  <button type=\"button\" class=\"btn btn-md\n                    btn-outline-secondary\">View</button>\n                </div>\n                <small class=\"text-muted\">9 mins</small>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-md-4\">\n          <div class=\"card mb-4 box-shadow\">\n            <img class=\"card-img-top\" src=\"../../assets/images/placeholder.png\"\n              alt=\"Card image cap\">\n            <div class=\"card-body\">\n              <p class=\"card-text\">This is a wider card with supporting text\n                below as a natural lead-in to additional content. This content\n                is a little bit longer.</p>\n              <hr>\n              <div class=\"d-flex justify-content-between align-items-center\">\n                <div class=\"btn-group\">\n                  <button type=\"button\" class=\"btn btn-md\n                    btn-outline-secondary\">View</button>\n                </div>\n                <small class=\"text-muted\">9 mins</small>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-md-4\">\n          <div class=\"card mb-4 box-shadow\">\n            <img class=\"card-img-top\" src=\"../../assets/images/placeholder.png\"\n              alt=\"Card image cap\">\n            <div class=\"card-body\">\n              <p class=\"card-text\">This is a wider card with supporting text\n                below as a natural lead-in to additional content. This content\n                is a little bit longer.</p>\n              <hr>\n              <div class=\"d-flex justify-content-between align-items-center\">\n                <div class=\"btn-group\">\n                  <button type=\"button\" class=\"btn btn-md\n                    btn-outline-secondary\">View</button>\n                </div>\n                <small class=\"text-muted\">9 mins</small>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-md-4\">\n          <div class=\"card mb-4 box-shadow\">\n            <img class=\"card-img-top\" src=\"../../assets/images/placeholder.png\"\n              alt=\"Card image cap\">\n            <div class=\"card-body\">\n              <p class=\"card-text\">This is a wider card with supporting text\n                below as a natural lead-in to additional content. This content\n                is a little bit longer.</p>\n              <hr>\n              <div class=\"d-flex justify-content-between align-items-center\">\n                <div class=\"btn-group\">\n                  <button type=\"button\" class=\"btn btn-md\n                    btn-outline-secondary\">View</button>\n                </div>\n                <small class=\"text-muted\">9 mins</small>\n              </div>\n            </div>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</main>"
 
 /***/ }),
 
@@ -96,7 +129,7 @@ module.exports = "<div *ngIf=\"user\">\n    <h2 class=\"page-header\">{{user.nam
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 class=\"page-header\">Register</h2>\n<form (submit)=\"onRegisterSubmit()\">\n    <div class=\"form-group\">\n        <label for=\"name\">Name</label>\n        <input [(ngModel)]=\"name\" name=\"name\" id=\"name\" class=\"form-control\" type=\"text\">\n    </div>\n        <div class=\"form-group\">\n        <label for=\"username\">Username</label>\n        <input [(ngModel)]=\"username\" name=\"username\" id=\"username\" class=\"form-control\" type=\"text\">\n    </div>\n        <div class=\"form-group\">\n        <label for=\"email\">Email</label>\n        <input [(ngModel)]=\"email\" name=\"email\" id=\"email\" class=\"form-control\" type=\"email\">\n    </div>\n        <div class=\"form-group\">\n        <label for=\"password\">Password</label>\n        <input [(ngModel)]=\"password\" name=\"password\" id=\"password\" class=\"form-control\" type=\"password\">\n    </div>\n    <input type=\"submit\" class=\"btn btn-primary\" value=\"Register\">\n</form>"
+module.exports = "<h2 class=\"page-header\">Register</h2>\r\n<form (submit)=\"onRegisterSubmit()\">\r\n    <div class=\"form-group\">\r\n        <label for=\"name\">Name</label>\r\n        <input [(ngModel)]=\"name\" name=\"name\" id=\"name\" class=\"form-control\" type=\"text\">\r\n    </div>\r\n        <div class=\"form-group\">\r\n        <label for=\"username\">Username</label>\r\n        <input [(ngModel)]=\"username\" name=\"username\" id=\"username\" class=\"form-control\" type=\"text\">\r\n    </div>\r\n        <div class=\"form-group\">\r\n        <label for=\"email\">Email</label>\r\n        <input [(ngModel)]=\"email\" name=\"email\" id=\"email\" class=\"form-control\" type=\"email\">\r\n    </div>\r\n        <div class=\"form-group\">\r\n        <label for=\"password\">Password</label>\r\n        <input [(ngModel)]=\"password\" name=\"password\" id=\"password\" class=\"form-control\" type=\"password\">\r\n    </div>\r\n    <input type=\"submit\" class=\"btn btn-primary\" value=\"Register\">\r\n</form>"
 
 /***/ }),
 
@@ -107,7 +140,7 @@ module.exports = "<h2 class=\"page-header\">Register</h2>\n<form (submit)=\"onRe
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"
+module.exports = ".container\r\n{\r\n    height: 100%;\r\n    max-width: 100vw;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-direction: column;\r\n    padding: 0 !important;\r\n}\r\n\r\n.header\r\n{\r\n    flex-shrink: 0;\r\n    -webkit-box-flex: 0;\r\n            flex-grow: 0;\r\n}\r\n\r\n.content\r\n{\r\n    flex-shrink: 1;\r\n    -webkit-box-flex: 1;\r\n            flex-grow: 1;\r\n    margin: auto;\r\n    position: relative;\r\n    overflow: scroll;\r\n    padding: 2.5%;\r\n}\r\n\r\n.footer\r\n{\r\n    -webkit-box-flex: 0;\r\n            flex: 0;\r\n    background: #eee;\r\n}\r\n\r\n.content::-webkit-scrollbar\r\n{\r\n    width: 0px;\r\n    background: transparent; /* make scrollbar transparent */\r\n}\r\n\r\n@media (min-width: 768px)\r\n{\r\n    .content\r\n    {\r\n        width: 100%;\r\n    }\r\n}\r\n\r\n@media (min-width: 1200px)\r\n{\r\n    .content\r\n    {\r\n        width: 75%;\r\n    }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksWUFBWTtJQUNaLGdCQUFnQjtJQUNoQixvQkFBYTtJQUFiLGFBQWE7SUFDYiw0QkFBc0I7SUFBdEIsNkJBQXNCO1lBQXRCLHNCQUFzQjtJQUN0QixxQkFBcUI7QUFDekI7O0FBRUE7O0lBRUksY0FBYztJQUNkLG1CQUFZO1lBQVosWUFBWTtBQUNoQjs7QUFFQTs7SUFFSSxjQUFjO0lBQ2QsbUJBQVk7WUFBWixZQUFZO0lBQ1osWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsYUFBYTtBQUNqQjs7QUFFQTs7SUFFSSxtQkFBTztZQUFQLE9BQU87SUFDUCxnQkFBZ0I7QUFDcEI7O0FBRUE7O0lBRUksVUFBVTtJQUNWLHVCQUF1QixFQUFFLCtCQUErQjtBQUM1RDs7QUFFQTs7SUFFSTs7UUFFSSxXQUFXO0lBQ2Y7QUFDSjs7QUFFQTs7SUFFSTs7UUFFSSxVQUFVO0lBQ2Q7QUFDSiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lclxyXG57XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBtYXgtd2lkdGg6IDEwMHZ3O1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBwYWRkaW5nOiAwICFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcbi5oZWFkZXJcclxue1xyXG4gICAgZmxleC1zaHJpbms6IDA7XHJcbiAgICBmbGV4LWdyb3c6IDA7XHJcbn1cclxuXHJcbi5jb250ZW50XHJcbntcclxuICAgIGZsZXgtc2hyaW5rOiAxO1xyXG4gICAgZmxleC1ncm93OiAxO1xyXG4gICAgbWFyZ2luOiBhdXRvO1xyXG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gICAgb3ZlcmZsb3c6IHNjcm9sbDtcclxuICAgIHBhZGRpbmc6IDIuNSU7XHJcbn1cclxuICBcclxuLmZvb3RlclxyXG57XHJcbiAgICBmbGV4OiAwO1xyXG4gICAgYmFja2dyb3VuZDogI2VlZTtcclxufVxyXG5cclxuLmNvbnRlbnQ6Oi13ZWJraXQtc2Nyb2xsYmFyXHJcbntcclxuICAgIHdpZHRoOiAwcHg7XHJcbiAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDsgLyogbWFrZSBzY3JvbGxiYXIgdHJhbnNwYXJlbnQgKi9cclxufVxyXG5cclxuQG1lZGlhIChtaW4td2lkdGg6IDc2OHB4KVxyXG57XHJcbiAgICAuY29udGVudFxyXG4gICAge1xyXG4gICAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgfVxyXG59XHJcblxyXG5AbWVkaWEgKG1pbi13aWR0aDogMTIwMHB4KVxyXG57XHJcbiAgICAuY29udGVudFxyXG4gICAge1xyXG4gICAgICAgIHdpZHRoOiA3NSU7XHJcbiAgICB9XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -170,6 +203,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! angular2-flash-messages */ "./node_modules/angular2-flash-messages/module/index.js");
 /* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(angular2_flash_messages__WEBPACK_IMPORTED_MODULE_15__);
 /* harmony import */ var _guards_auth_guard__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./guards/auth.guard */ "./src/app/guards/auth.guard.ts");
+/* harmony import */ var _projects_projects_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./projects/projects.component */ "./src/app/projects/projects.component.ts");
+/* harmony import */ var _notes_notes_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./notes/notes.component */ "./src/app/notes/notes.component.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
+
+
+
 
 
 
@@ -192,7 +231,9 @@ const appRoutes = [
     { path: 'register', component: _register_register_component__WEBPACK_IMPORTED_MODULE_9__["RegisterComponent"] },
     { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_8__["LoginComponent"] },
     { path: 'dashboard', component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_11__["DashboardComponent"], canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_16__["AuthGuard"]] },
-    { path: 'profile', component: _profile_profile_component__WEBPACK_IMPORTED_MODULE_12__["ProfileComponent"], canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_16__["AuthGuard"]] }
+    { path: 'profile', component: _profile_profile_component__WEBPACK_IMPORTED_MODULE_12__["ProfileComponent"], canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_16__["AuthGuard"]] },
+    { path: 'projects', component: _projects_projects_component__WEBPACK_IMPORTED_MODULE_17__["ProjectsComponent"] },
+    { path: 'notes', component: _notes_notes_component__WEBPACK_IMPORTED_MODULE_18__["NotesComponent"] }
 ];
 let AppModule = class AppModule {
 };
@@ -205,7 +246,10 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _register_register_component__WEBPACK_IMPORTED_MODULE_9__["RegisterComponent"],
             _home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"],
             _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_11__["DashboardComponent"],
-            _profile_profile_component__WEBPACK_IMPORTED_MODULE_12__["ProfileComponent"]
+            _profile_profile_component__WEBPACK_IMPORTED_MODULE_12__["ProfileComponent"],
+            _projects_projects_component__WEBPACK_IMPORTED_MODULE_17__["ProjectsComponent"],
+            _notes_notes_component__WEBPACK_IMPORTED_MODULE_18__["NotesComponent"],
+            _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__["FooterComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -260,6 +304,48 @@ DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [__webpack_require__(/*! ./dashboard.component.css */ "./src/app/dashboard/dashboard.component.css")]
     })
 ], DashboardComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/footer/footer.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/footer/footer.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "div\r\n{\r\n    background-color:#2c3e50;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztJQUVJLHdCQUF3QjtBQUM1QiIsImZpbGUiOiJzcmMvYXBwL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdlxyXG57XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiMyYzNlNTA7XHJcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/footer/footer.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/footer/footer.component.ts ***!
+  \********************************************/
+/*! exports provided: FooterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let FooterComponent = class FooterComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+FooterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-footer',
+        template: __webpack_require__(/*! raw-loader!./footer.component.html */ "./node_modules/raw-loader/index.js!./src/app/footer/footer.component.html"),
+        styles: [__webpack_require__(/*! ./footer.component.css */ "./src/app/footer/footer.component.css")]
+    })
+], FooterComponent);
 
 
 
@@ -500,6 +586,48 @@ NavbarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/notes/notes.component.css":
+/*!*******************************************!*\
+  !*** ./src/app/notes/notes.component.css ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".card\r\n{\r\n    border-radius: 4px;\r\n    background: #fff;\r\n    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);\r\n    -webkit-transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);\r\n    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);\r\n    padding: 5%;\r\n    cursor: pointer;\r\n    text-align: center;\r\n    margin-bottom: 5vh;\r\n}\r\n  \r\n.card:hover\r\n{\r\n    -webkit-transform: scale(1.025);\r\n            transform: scale(1.025);\r\n    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);\r\n}\r\n  \r\n.card h3\r\n{\r\n    font-weight: 600;\r\n}\r\n  \r\n@media(max-width: 990px)\r\n{\r\n    .card { margin: 2%; }\r\n}\r\n  \r\nhr\r\n{\r\n    border: 0;\r\n    height: 0;\r\n    border-top: 1px solid rgba(0, 0, 0, 0.1);\r\n    border-bottom: 1px solid rgba(255, 255, 255, 0.3);\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbm90ZXMvbm90ZXMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7SUFFSSxrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLCtEQUErRDtJQUMvRCw0SUFBb0k7SUFBcEksb0lBQW9JO0lBQ3BJLFdBQVc7SUFDWCxlQUFlO0lBQ2Ysa0JBQWtCO0lBQ2xCLGtCQUFrQjtBQUN0Qjs7QUFFQTs7SUFFSSwrQkFBdUI7WUFBdkIsdUJBQXVCO0lBQ3ZCLGtFQUFrRTtBQUN0RTs7QUFFQTs7SUFFSSxnQkFBZ0I7QUFDcEI7O0FBRUE7O0lBRUksUUFBUSxVQUFVLEVBQUU7QUFDeEI7O0FBRUE7O0lBRUksU0FBUztJQUNULFNBQVM7SUFDVCx3Q0FBd0M7SUFDeEMsaURBQWlEO0FBQ3JEIiwiZmlsZSI6InNyYy9hcHAvbm90ZXMvbm90ZXMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJkXHJcbntcclxuICAgIGJvcmRlci1yYWRpdXM6IDRweDtcclxuICAgIGJhY2tncm91bmQ6ICNmZmY7XHJcbiAgICBib3gtc2hhZG93OiAwIDZweCAxMHB4IHJnYmEoMCwwLDAsLjA4KSwgMCAwIDZweCByZ2JhKDAsMCwwLC4wNSk7XHJcbiAgICB0cmFuc2l0aW9uOiAuM3MgdHJhbnNmb3JtIGN1YmljLWJlemllciguMTU1LDEuMTA1LC4yOTUsMS4xMiksLjNzIGJveC1zaGFkb3csLjNzIC13ZWJraXQtdHJhbnNmb3JtIGN1YmljLWJlemllciguMTU1LDEuMTA1LC4yOTUsMS4xMik7XHJcbiAgICBwYWRkaW5nOiA1JTtcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIG1hcmdpbi1ib3R0b206IDV2aDtcclxufVxyXG4gIFxyXG4uY2FyZDpob3ZlclxyXG57XHJcbiAgICB0cmFuc2Zvcm06IHNjYWxlKDEuMDI1KTtcclxuICAgIGJveC1zaGFkb3c6IDAgMTBweCAyMHB4IHJnYmEoMCwwLDAsLjEyKSwgMCA0cHggOHB4IHJnYmEoMCwwLDAsLjA2KTtcclxufVxyXG4gIFxyXG4uY2FyZCBoM1xyXG57XHJcbiAgICBmb250LXdlaWdodDogNjAwO1xyXG59XHJcbiAgXHJcbkBtZWRpYShtYXgtd2lkdGg6IDk5MHB4KVxyXG57XHJcbiAgICAuY2FyZCB7IG1hcmdpbjogMiU7IH1cclxufVxyXG5cclxuaHJcclxue1xyXG4gICAgYm9yZGVyOiAwO1xyXG4gICAgaGVpZ2h0OiAwO1xyXG4gICAgYm9yZGVyLXRvcDogMXB4IHNvbGlkIHJnYmEoMCwgMCwgMCwgMC4xKTtcclxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMyk7XHJcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/notes/notes.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/notes/notes.component.ts ***!
+  \******************************************/
+/*! exports provided: NotesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NotesComponent", function() { return NotesComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let NotesComponent = class NotesComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+NotesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-notes',
+        template: __webpack_require__(/*! raw-loader!./notes.component.html */ "./node_modules/raw-loader/index.js!./src/app/notes/notes.component.html"),
+        styles: [__webpack_require__(/*! ./notes.component.css */ "./src/app/notes/notes.component.css")]
+    })
+], NotesComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/profile/profile.component.css":
 /*!***********************************************!*\
   !*** ./src/app/profile/profile.component.css ***!
@@ -554,6 +682,48 @@ ProfileComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [__webpack_require__(/*! ./profile.component.css */ "./src/app/profile/profile.component.css")]
     })
 ], ProfileComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/projects/projects.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/projects/projects.component.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "hr\r\n{\r\n    border: 0;\r\n    height: 0;\r\n    border-top: 1px solid rgba(0, 0, 0, 0.1);\r\n    border-bottom: 1px solid rgba(255, 255, 255, 0.3);\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvamVjdHMvcHJvamVjdHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7SUFFSSxTQUFTO0lBQ1QsU0FBUztJQUNULHdDQUF3QztJQUN4QyxpREFBaUQ7QUFDckQiLCJmaWxlIjoic3JjL2FwcC9wcm9qZWN0cy9wcm9qZWN0cy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaHJcclxue1xyXG4gICAgYm9yZGVyOiAwO1xyXG4gICAgaGVpZ2h0OiAwO1xyXG4gICAgYm9yZGVyLXRvcDogMXB4IHNvbGlkIHJnYmEoMCwgMCwgMCwgMC4xKTtcclxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMyk7XHJcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/projects/projects.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/projects/projects.component.ts ***!
+  \************************************************/
+/*! exports provided: ProjectsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectsComponent", function() { return ProjectsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let ProjectsComponent = class ProjectsComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+ProjectsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-projects',
+        template: __webpack_require__(/*! raw-loader!./projects.component.html */ "./node_modules/raw-loader/index.js!./src/app/projects/projects.component.html"),
+        styles: [__webpack_require__(/*! ./projects.component.css */ "./src/app/projects/projects.component.css")]
+    })
+], ProjectsComponent);
 
 
 
@@ -834,7 +1004,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Projects\Future Tech Frontier\MEANAuthApp\angular-src\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\Projects\MEANAuthApp\angular-src\src\main.ts */"./src/main.ts");
 
 
 /***/ })
