@@ -7,7 +7,7 @@ Future Tech Frontier is a web portfolio made using the MEAN Stack and authentica
 This is considered a temporary side-project yet has the potential to become my next portfolio.
 
 ### Technologies Used
-NodeJS, Angluar, Express, MongoDB, Mongoose, BCrypt, CORS, Passport, JSWebToken, Passport-JWT, Body-Parser, AppVeyor, mLab, Heroku
+NodeJS, Angluar, Express, MongoDB, Mongoose, BCrypt, CORS, Passport, JSWebToken, Passport-JWT, Body-Parser, AppVeyor, Azure, Azure CosmoDB
 
 <img align="left" src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/256/square_256/nodejslogo.png" height="64" width="64">
 <img align="left" src="https://cdn.iconscout.com/icon/free/png-256/angular-3-226070.png" height="64" width="64">
@@ -17,8 +17,8 @@ NodeJS, Angluar, Express, MongoDB, Mongoose, BCrypt, CORS, Passport, JSWebToken,
 <img align="left" src="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-LCoiwNk1Jf4dSucI3xd%2Favatar.png?generation=1526671856470952&alt=media" height="64" width="64">
 <img align="left" src="https://camo.githubusercontent.com/077cf129a9834cb1d4dce35c02a00b4b0cad7799/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3537323139362f3139353538312f39666537366164612d376666372d313165322d396334322d3764383634396433653262322e706e67" height="64" width="64">
 <img align="left" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Appveyor_logo.svg" height="64" width="64">
-<img align="left" src="https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1456801709/h3k5fzewivurrvqnnr3q.png" height="64" width="64">
-<img src="https://img.icons8.com/nolan/2x/heroku.png" height="64" width="64">
+<img align="left" src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180821105618/Microsoft_Azure_Logo.png" height="64" width="64">
+<img src="https://dbdb.io/media/logos/cosmosdb.png" height="64" width="64">
 
 ## Author
  
