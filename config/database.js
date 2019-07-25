@@ -1,5 +1,5 @@
 module.exports =
 {
-    database: 'mongodb://alex:alex123@ds243607.mlab.com:43607/heroku_msb8s9c0',
+    database: 'mongodb://ftf-mongodb:Ul5VO1QweRTKDxh3VR7WCsH93eWtwtBjvHnhViNEytYgKu7SVcz2Hnxmj3QmQywriyUZxDyqLwErf1slUMp7uw==@ftf-mongodb.documents.azure.com:10255/mean-dev?ssl=true&sslverifycertificate=false',
     secret: 'yoursecret'
 }
