@@ -19,6 +19,7 @@ import { AuthGuard } from './guards/auth.guard';
 import { ProjectsComponent } from './projects/projects.component';
 import { NotesComponent } from './notes/notes.component';
 import { FooterComponent } from './footer/footer.component';
+import { AnalyticsService } from './services/analytics.service';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -50,7 +51,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FlashMessagesModule.forRoot()
   ],
-  providers: [ValidateService, AuthService, AuthGuard],
+  providers: [ValidateService, AuthService, AnalyticsService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
