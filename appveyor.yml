@@ -29,12 +29,15 @@ install:
   - ps: Install-Product node $env:nodejs_version
   # install modules
   - npm install
+  - npm install mocha
+  - npm install chai
 
 # Post-install test scripts.
 test_script:
   # Output useful info for debugging.
   - node --version
   - npm --version
+  - mocha
 
 # Don't actually build.
 build: off
