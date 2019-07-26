@@ -25,6 +25,8 @@ NodeJS, Angluar, Express, MongoDB, Mongoose, BCrypt, CORS, Passport, JSWebToken,
 #### Alex Jevdokimovs
 <img src="https://i.imgur.com/zM5uYXR.jpg" height="200" width="150">
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/O4O3ZZB3)
+
 #### **Software Engineer, Game Developer, Music Producer, Public Speaker**
 
 > "There is no wealth like knowledge,  and no poverty like ignorance." -  **Buddah**
